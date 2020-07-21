@@ -1,0 +1,197 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+body{
+  font-family: Helvetica,sans-serif;
+  background-color: darkgray;
+  color: #072451;
+}
+
+/*logo and navigation-fixed*/
+.flexbox1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 125px;
+  background-color:whitesmoke;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  border-bottom: 2px solid  #072451;
+}
+
+a{
+  color: #072451 !Important;
+  font-size: 16px !Important;
+  font-weight: bold !Important;
+}
+#logo{
+  width: auto;
+  height: 100px;
+  margin: 10px;
+  border-radius: 5%;
+}
+/*tricky bottom border added to flexbox1-also, see flexbox1*/
+#border-bottom{
+  flex: 0 0 25%;
+  margin-bottom: -1px;
+  border-bottom: 2 px solid  #072451;
+}
+
+/*container with main pic*/
+#container{
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#main-pic{
+
+  width:100%;
+  height:auto ;
+  margin-top: 155px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+  border: 5px solid  #072451;
+  border-radius: 5%;
+  background-color: white;
+  padding: 5px;
+
+}
+/*about Casey*/
+
+#about-CCS{
+  display: block;
+  height: 300px;
+  width: 375px;
+  border: 5px solid  #072451;
+  padding: 20px;
+  border-radius: 5%;
+  background-color: whitesmoke;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+/*projects-6 pics*/
+#Recent-Projects{
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  text-align:center;
+  margin-bottom: 50px;
+}
+.flexbox4{
+  height:4000px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+#porch, #porch2, #porch3, #office, #driveway, #foundation, #sidewalk, #concrete-slab, #concrete-slab-and-Isaiah{
+  height:500px;
+  width:400px ;
+  border: 5px solid  #072451;
+  border-radius: 5%;
+  background-color: white;
+  padding: 5px;
+}
+
+
+
+/*2 media queries*/
+@media only screen and (max-width: 800px)and(min-width: 450px){
+ #driveway,#sidewalk,
+ #foundation,#concrete-slab,#concrete-slab-and-Isaiah
+ #office,
+ #porch,
+ #porch2,
+ #porch3{
+   height: 375px;
+   width: auto;
+ }
+#container{
+  height: 45%;
+  width: auto;
+}
+
+
+
+#Recent-Projects{
+  margin-bottom: 10px;
+}
+
+}
+@media only screen and (max-width: 449px){
+ #driveway,#sidewalk,
+ #foundation,#concrete-slab,
+ #office,#concrete-slab-and-Isaiah,
+ #porch,
+ #porch,
+ #porch{
+   height: 400px;
+   width: 350;
+ }
+#container{
+  height: 45%;
+  width: auto;
+}
+
+#title{
+  font-size: 14px;
+}
+#about-CCS{
+  font-size: 13px;
+  width: 250px;
+  height:175px;
+}
+#Recent-Projects{
+  margin-bottom: 10px;
+}
+
+#logo{
+  height: 120px;
+}
+
+
+
+.flexbox1{
+  height: 150px;
+}
+}
+/*end media queries*/
+
+
+/*footer*/
+footer{
+
+  width: 100%;
+  height:200px;
+  display: block;
+  border-top:2px solid #072451;
+  border-bottom: 2px solid #072451;
+  padding-top: 150px;
+  padding-bottom: 20px;
+}
+#contact{
+  background-color: whitesmoke;
+  color: #072451;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top:30px:
+  margin-bottom: 30px;
+}
+i{
+  top: 50%;
+  left: 50%;
+}
